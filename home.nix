@@ -42,14 +42,18 @@
 
     shellAliases = {
       g = "git";
+      ls = "eza";
+      ll = "eza -l";
+      la = "eza -la";
+      tree = "eza --tree";
     };
   };
 
   programs.home-manager.enable = true;
 
   imports = [
-    ./user.nix # user config
     ./apps/direnv.nix
+    ./apps/eza.nix
     ./apps/bash.nix
     ./apps/zsh.nix
     ./apps/oh-my-posh.nix
