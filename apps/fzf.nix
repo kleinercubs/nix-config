@@ -1,7 +1,6 @@
 {
-  programs.oh-my-posh = {
+  programs.fzf = {
     enable = true;
     enableBashIntegration = true;
-    useTheme = "pure";
   };
 }

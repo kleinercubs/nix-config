@@ -58,6 +58,7 @@
     ./apps/yazi.nix
     ./apps/git.nix
     ./apps/gitui.nix
+    ./apps/fzf.nix
     ./apps/nixvim
   ];
 }
