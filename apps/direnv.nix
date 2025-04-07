@@ -1,4 +1,4 @@
-{
+{config, ...}: {
   programs.direnv = {
     enable = true;
     enableBashIntegration = true;
@@ -8,6 +8,7 @@
       global.load_dotenv = true;
       global.warn_timeout = 0;
       global.hide_env_diff = true;
+      whitelist.prefix = [config.home.homeDirectory];
     };
   };
 }
