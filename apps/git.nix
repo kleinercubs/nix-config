@@ -7,6 +7,8 @@
       st = "status";
       br = "branch";
     };
+    userName = "jiezhuzzz";
+    userEmail = "jiezzz@duck.com";
     ignores = [".DS_Store"];
     delta = {
       enable = true;
