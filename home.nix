@@ -39,7 +39,7 @@
   };
 
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
@@ -53,5 +53,7 @@
     ./apps/tmux.nix
     ./apps/yazi.nix
     ./apps/git.nix
+    ./apps/gitui.nix
+    ./apps/nixvim
   ];
 }

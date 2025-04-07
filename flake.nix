@@ -26,6 +26,7 @@
       cc = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
+          nixvim.homeManagerModules.nixvim
           ./home.nix
         ];
       };
