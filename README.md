@@ -6,6 +6,12 @@ sudo apt update && sudo apt upgrade
 
 # install nix
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+
+# run home-manager
+nix run nixpkgs#home-manager -- switch --flake .#cc
+
+# switch to zsh
+sudo chsh -s $(which zsh) cc
 ```
 
 ## References
