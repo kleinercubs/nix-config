@@ -9,7 +9,7 @@
     };
     userName = "jiezhuzzz";
     userEmail = "jiezzz@duck.com";
-    ignores = [".DS_Store"];
+    ignores = [".DS_Store" ".direnv/"];
     delta = {
       enable = true;
     };

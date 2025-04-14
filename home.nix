@@ -19,6 +19,10 @@
       bat
       fd
       uv
+      lazydocker
+      podman-tui
+      bottom
+      jaq
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -46,10 +50,14 @@
       ll = "eza -l";
       la = "eza -la";
       tree = "eza --tree";
+      lzd = "lazydocker";
+      jq = "jaq";
     };
   };
 
   programs.home-manager.enable = true;
+
+  services.podman.enable = true;
 
   imports = [
     ./apps/direnv.nix
