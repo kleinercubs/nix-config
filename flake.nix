@@ -1,5 +1,5 @@
 {
-  description = "Chameleon Nix";
+  description = "Nix Home Manager configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -21,16 +21,18 @@
   }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    homeConfigurations = {
-      cc = home-manager.lib.homeManagerConfiguration {
+    makeHomeConfig = host:
+      home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
           nixvim.homeManagerModules.nixvim
+          ./hosts/${host}.nix
           ./home.nix
         ];
       };
-    };
+    hosts = ["cc" "goku" "vegeta"];
+  in {
+    homeConfigurations = nixpkgs.lib.genAttrs hosts (host: makeHomeConfig host);
     formatter.${system} = nixpkgs.legacyPackages.${system}.alejandra;
   };
 }
