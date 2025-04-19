@@ -49,6 +49,7 @@
     tree = "eza --tree";
     lzd = "lazydocker";
     jq = "jaq";
+    grep = "rg";
   };
 
   programs.home-manager.enable = true;
