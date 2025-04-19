@@ -18,6 +18,8 @@
     podman-tui
     bottom
     jaq
+    ripgrep
+    procs
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -56,7 +58,7 @@
   imports = [
     ./apps/direnv.nix
     ./apps/eza.nix
-    ./apps/bash.nix
+    # ./apps/bash.nix
     ./apps/zsh.nix
     ./apps/oh-my-posh.nix
     ./apps/atuin.nix
