@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 
 # run home-manager
-nix run nixpkgs#home-manager -- switch --flake .#cc
+nix run nixpkgs#home-manager -- switch --flake .#goku
 
 # switch to zsh
 sudo chsh -s $(which zsh) cc

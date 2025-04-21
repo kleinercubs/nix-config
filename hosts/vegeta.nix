@@ -1,4 +1,4 @@
 {
-  home.username = "jiezhu";
-  home.homeDirectory = "/hom/zp_vegeta/scratch_sb/jiez";
+  home.username = "weichenli";
+  home.homeDirectory = "/home/weichenli";
 }

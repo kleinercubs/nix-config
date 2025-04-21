@@ -38,18 +38,7 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "nvim";
-  };
-
-  home.shellAliases = {
-    g = "git";
-    ls = "eza";
-    ll = "eza -l";
-    la = "eza -la";
-    tree = "eza --tree";
-    lzd = "lazydocker";
-    jq = "jaq";
-    grep = "rg";
+    PATH = "$HOME/.nix-profile/bin:$PATH";
   };
 
   programs.home-manager.enable = true;
@@ -68,6 +57,5 @@
     ./apps/git.nix
     ./apps/gitui.nix
     ./apps/fzf.nix
-    ./apps/nixvim
   ];
 }
