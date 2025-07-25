@@ -16,6 +16,7 @@
     ./game.nix
     ./network.nix
     ./launch.nix
+    ./docker.nix
   ];
 
   services.openssh = {

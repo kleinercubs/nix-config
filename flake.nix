@@ -112,8 +112,8 @@
 
       homeConfigurations = {
         cc = mkServerConfig "cc" "/home/cc";
-        goku = mkServerConfig "weichen" "/zp_goku/scratch_lb/weichen";
-        vegeta = mkServerConfig "weichen" "/zp_vegeta/scratch_lb/weichen";
+        goku = mkServerConfig "weichenli" "/zp_goku/scratch_lb/weichen";
+        vegeta = mkServerConfig "weichenli" "/zp_vegeta/scratch_lb/weichen";
       };
     };
 }

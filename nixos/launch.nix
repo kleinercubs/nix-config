@@ -18,11 +18,11 @@
   boot.consoleLogLevel = 0;
   # systemd.extraConfig = "DefaultTimeoutStopSec=5s";
 
-  services.getty.autologinUser = "jie";
+  services.getty.autologinUser = "weichen";
   services.greetd = {
     enable = true;
     settings.default_session = {
-      user = "jie";
+      user = "weichen";
       command = "steam-gamescope > /dev/null 2>&1";
     };
   };

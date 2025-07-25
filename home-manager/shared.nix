@@ -74,5 +74,6 @@
     ../apps/helix.nix
     ../apps/jujutsu.nix
     ../apps/nixvim
+    ../apps/docker.nix
   ];
 }
