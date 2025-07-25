@@ -15,15 +15,15 @@ in {
     matchBlocks = {
       "uchicago" = {
         hostname = "linux.cs.uchicago.edu";
-        user = "jiezhu";
+        user = "weichenli";
       };
       "goku" = {
         proxyJump = "uchicago";
-        user = "jiezzz";
+        user = "weichenli";
       };
       "vegeta" = {
         proxyJump = "uchicago";
-        user = "jiezzz";
+        user = "weichenli";
       };
     };
   };

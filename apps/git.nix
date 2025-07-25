@@ -13,8 +13,8 @@
         st = "status";
         br = "branch";
       };
-      userName = "jiezhuzzz";
-      userEmail = "jiezzz@duck.com";
+      userName = "kleinercubs";
+      userEmail = "weichxli@gmail.com";
       ignores = [".DS_Store" ".direnv/"];
       delta = {
         enable = true;

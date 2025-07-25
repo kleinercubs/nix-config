@@ -103,17 +103,17 @@
     )
     // {
       nixosConfigurations = {
-        steamer = mkNixosConfig "jie";
+        steamer = mkNixosConfig "weichenli";
       };
 
       darwinConfigurations = {
-        mac = mkDarwinConfig "jie";
+        mac = mkDarwinConfig "weichenli";
       };
 
       homeConfigurations = {
         cc = mkServerConfig "cc" "/home/cc";
-        goku = mkServerConfig "jiezzz" "/zp_goku/scratch_sb/jiezzz";
-        vegeta = mkServerConfig "jiezzz" "/zp_vegeta/scratch_sb/jiezzz";
+        goku = mkServerConfig "weichen" "/zp_goku/scratch_lb/weichen";
+        vegeta = mkServerConfig "weichen" "/zp_vegeta/scratch_lb/weichen";
       };
     };
 }

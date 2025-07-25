@@ -3,8 +3,8 @@
     enable = true;
     settings = {
       user = {
-        email = "jiezzz@duck.com";
-        name = "jiezhuzzz";
+        email = "weichxli@gmail.com";
+        name = "weichenli";
       };
     };
   };
