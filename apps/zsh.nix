@@ -2,7 +2,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    initExtra = ''
+    initContent = ''
     # >>> conda initialize >>>
     # !! Contents within this block are managed by 'conda init' !!
     __conda_setup="$('/zp_$(hostname)/scratch_sb/weichenli/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

@@ -72,7 +72,6 @@
     ../apps/gitui.nix
     ../apps/fzf.nix
     ../apps/helix.nix
-    ../apps/jujutsu.nix
     ../apps/nixvim
     ../apps/docker.nix
   ];
