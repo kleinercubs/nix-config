@@ -1,7 +1,10 @@
 {
   programs.zsh = {
     enable = true;
+    autocd = true;
     enableCompletion = true;
+    antidote.enable = true;
+    
     initContent = ''
     # >>> conda initialize >>>
     # !! Contents within this block are managed by 'conda init' !!
@@ -17,6 +20,21 @@
     fi
     unset __conda_setup
     # <<< conda initialize <<<
+    
+    # Oh My Zsh configuration
+    export ZSH="/zp_$(hostname)/scratch_lb/weichen/.nix-profile/share/oh-my-zsh"
+    ZSH_THEME="robbyrussell"
+    plugins=(git)
+    source $ZSH/oh-my-zsh.sh
     '';
+    
+    antidote.plugins = [
+      "zsh-users/zsh-completions"
+      "zsh-users/zsh-syntax-highlighting"
+      "zsh-users/zsh-history-substring-search"
+      "jeffreytse/zsh-vi-mode"
+      "Aloxaf/fzf-tab"
+      "lipov3cz3k/zsh-uv"
+    ];
   };
 }
