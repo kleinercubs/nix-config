@@ -27,6 +27,8 @@ sudo apt update && sudo apt upgrade
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 
 # run home-manager
+export HOME=$PATH_TO_STORE_CONFIG                                                           
+export XDG_CONFIG_HOME=$HOME/.config
 nix run nixpkgs#home-manager -- switch --flake .#<host>
 
 # switch to zsh

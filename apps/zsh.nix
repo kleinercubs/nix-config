@@ -22,6 +22,7 @@
     # <<< conda initialize <<<
     
     # Oh My Zsh configuration
+    export PATH=/zp_$(hostname)/scratch_lb/weichen/.nix-profile/bin:$PATH
     export ZSH="/zp_$(hostname)/scratch_lb/weichen/.nix-profile/share/oh-my-zsh"
     ZSH_THEME="robbyrussell"
     plugins=(git)
